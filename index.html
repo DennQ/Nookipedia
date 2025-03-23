@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Nookipedia</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/Animal_Crossing_Leaf.svg"
+    />
     <script src="index.js" defer></script>
     <script
       src="https://kit.fontawesome.com/f0dc26a1be.js"
@@ -61,7 +66,38 @@
       </header>
     </section>
     <section id="browse">
-
+      <div class="container">
+        <div class="row">
+          <div class="search__box">
+            <div class="search__box--narrator">Maple</div>
+            <div class="search">
+              <div class="search__text">
+                <h1 class="search__text--title">
+                  Search for any Animal Crossing Villager
+                </h1>
+                <h3 class="search__text--para">
+                  Click on the search bar, then type the villager name
+                </h3>
+              </div>
+              <div class="search__bar">
+                <input type="text" id="search__input" placeholder="Search..." />
+              </div>
+            </div>
+            <div class="search__character">
+              <img src="./assets/Maple.png" class="search__character--img" alt="" />
+            </div>
+          </div>
+          <div class="filter__box">
+            <select id="filter">
+              <option value="SORT" selected>Sort</option>
+              <option value="ALPHABETICAL">Alphabetical, A to Z</option>
+              <option value="ALPHABETICAL__BACKWARDS">
+                Alphabetical, Z to A
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
